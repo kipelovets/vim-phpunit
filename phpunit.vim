@@ -52,9 +52,9 @@ if !exists('g:phpunit_params')
 endif
 
 if !exists('g:phpunit_highlights')
-  highlight default PhpUnitFail ctermbg=Red ctermfg=White
-  highlight default PhpUnitOK ctermbg=LightGreen ctermfg=White
-  highlight default PhpUnitAssertFail ctermfg=LightRed
+  highlight PhpUnitFail ctermbg=Red ctermfg=White guibg=Red guifg=White
+  highlight PhpUnitOK ctermbg=LightGreen ctermfg=White guibg=LightGreen guifg=White
+  highlight PhpUnitAssertFail ctermfg=LightRed guibg=LightRed 
   let g:phpunit_highlights = 1
 endif
 
